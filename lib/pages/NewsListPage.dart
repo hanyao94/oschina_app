@@ -9,6 +9,7 @@ class NewsListPage extends StatelessWidget {
       child: new RaisedButton(onPressed: () {
         Navigator.of(context).push(new MaterialPageRoute(builder: (ctx) {
           return new NewsDetailPage();
+          
         }));
       }),
     );
