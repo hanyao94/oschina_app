@@ -3,6 +3,7 @@ import 'package:oschina_app/pages/NewsListPage.dart';
 import 'package:oschina_app/pages/TweetsListPage.dart';
 import 'package:oschina_app/pages/DiscoveryPage.dart';
 import 'package:oschina_app/pages/MyInfoPage.dart';
+import 'package:oschina_app/widgets/MyDrawer.dart';
 
 void main() => runApp(new MyApp());
 
@@ -54,7 +55,7 @@ class MyOSCClientState extends State<MyApp> {
           //设置页面主题色
           primaryColor: const Color(0xFF63CA6C)),
       home: new Scaffold(
-        drawer: new Drawer(child: new Center(child: new Text('this is drawer'),),),
+        drawer: new MyDrawer(),
         appBar: new AppBar(
           //设置AppBar标题
           title: new Text(appBarTitles[page],
